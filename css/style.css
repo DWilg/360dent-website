@@ -113,6 +113,26 @@ h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); margin-bottom: 1.5rem; }
   padding: 1.2rem;
 }
 
+.section-intro { color: var(--color-muted); max-width: 70ch; margin: -0.5rem 0 1.5rem; }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.gallery-item {
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: #fff;
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  min-height: 210px;
+  object-fit: cover;
+}
+
 .pricing-table-wrapper { overflow-x: auto; }
 .pricing-table {
   width: 100%;
@@ -181,5 +201,6 @@ h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); margin-bottom: 1.5rem; }
   }
   .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1.1fr 1fr; align-items: center; }
   .card-grid { grid-template-columns: repeat(3, 1fr); }
+  .gallery-grid { grid-template-columns: repeat(3, 1fr); }
   .footer-grid { grid-template-columns: repeat(3, auto); align-items: center; justify-content: space-between; }
 }
