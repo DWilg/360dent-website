@@ -49,6 +49,9 @@ h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); margin-bottom: 1.5rem; }
 }
 .navbar { display: flex; align-items: center; justify-content: space-between; min-height: 72px; }
 .logo { display: inline-flex; align-items: center; gap: .6rem; font-weight: 800; color: var(--color-primary); }
+.logo-text { display: flex; flex-direction: column; line-height: 1.15; }
+.logo-name  { font-weight: 800; }
+.logo-tagline { font-size: .58rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--color-accent); }
 
 .nav-toggle {
   display: inline-flex;
