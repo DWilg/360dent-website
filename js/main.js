@@ -13,12 +13,13 @@ navToggle?.addEventListener('click', () => {
   navToggle.setAttribute('aria-expanded', String(isOpen));
 });
 
-navLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    navMenu.classList.remove('open');
-    navToggle?.setAttribute('aria-expanded', 'false');
-  });
-});
+const closeMenu = () => {
+  navMenu.classList.remove('open');
+  navToggle?.setAttribute('aria-expanded', 'false');
+};
+
+navLinks.forEach((link) => link.addEventListener('click', closeMenu));
+document.querySelector('.nav-cta')?.addEventListener('click', closeMenu);
 
 const setActiveLink = () => {
   const scrollPos = window.scrollY + 140;
